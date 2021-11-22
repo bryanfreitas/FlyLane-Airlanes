@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyLane</title>
+    <link rel="stylesheet" href="hoteles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+
+</head>
+<body>
+  
+    <div class="container">
+    <div class="animate__animated animate__fadeIn animate__delay-1s">
+        <nav class="nav-main">
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="vuelos.html">Vuelos</a></li>
+                <li><a href="ciudades.html">Ciudades</a></li>
+                <li><a href="hoteles.html">Hoteles</a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+    <hr>
+
+<br><br><br>
+    <h1 class="titulo">Encuentra tu hotel ideal con FlyLane, filtra las esterellas que quieras con el boton de abajo</h1>
+    <button class="boton" onclick="diaSemana()">Haz click aqui para filtrar los hoteles</button>
+    <br><br><br>
+    <h1 id="dia"></h1>
+
+    <script type="text/javascript">    
+    function diaSemana() {
+              var texto;
+              var diaSemana = prompt("Ingresa la cantidad de estrellas que desee en un hotel");
+              switch(diaSemana) {
+                case "5":
+                  texto = "1. Baros Maldives (Islas Maldivas) 2. Riad Kheirredine (Marrakech, Marruecos) 3. The Upper House (Hong Kong, China)4. The Oberoi Vanyavilas (Sawai Madhopur, India) 5. Belmond Palacio Nazarenas (Cuzco, Perú)";
+                  break;
+                case "4":
+                  texto = "1 Granville Park 2 Quality Faria Lima 3 Hotel da Ilha  4 Planalto Select Hotel Ponta Grossa 5 Hotel Recife Praia";
+                  break;
+                case "3":
+                  texto = "1Inácio Palace  2Hotel São Bento  3Gran Hotel Morada do Sol  4Hotel Fazenda Akropolis  5Green Hill Hotel";
+                  break;
+                case "2":
+                  texto = "1Transamerica Prime Ribeirao Preto 2Intercity Pátio Pinda 3Saint Paul Residence 4Confraria Colonial Hotel Boutique 5Hotel Colonial Plaza ";
+                  break;
+                case "1":
+                  texto = "1Grande Hotel da Barra 2Beach Hotel Sunset 3Hotel Açay 4Mercure Angra dos Reis 5Hotel Araguaia1 ";
+                  break;
+                default:
+                  texto = "ERROR | Debes ingresar valores entre 1 y 5";
+              }
+              document.getElementById("dia").innerHTML = texto;
+            }
+    </script>
+
+</body>
+</html>

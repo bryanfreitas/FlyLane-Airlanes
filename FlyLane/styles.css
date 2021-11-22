@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.32'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+}
+
+a{
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.container{
+    font-family: 'Heebo', sans-serif;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+ul{
+    list-style: none;
+}
+
+.nav-main{
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 66px;
+    padding: 20px 0px;
+}
+
+.nav-main ul{
+    display: flex;
+}
+
+.nav-main ul li{
+    padding: 10px;
+}
+
+.nav-main ul li a:hover{
+    border-bottom: 2px solid orange;
+}
+
+.main{
+    width: 100%;
+    height: 830px;
+    
+    background: url("imagenes/avionph.jpg") no-repeat center center/cover;
+}
+
+#logo{
+    margin: -2% -1%;
+    float: none;
+}
+
+.inside-main{
+    width: 65%;
+    height: 400px;
+    float: left;
+    margin: 14% 1.5%;
+}
+.main h2{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+}
+
+.main p{
+    color:white;
+    font-family: 'Heebo', sans-serif;
+    font-size: 35px;
+    float: none;
+    margin-top: -18px;
+}
+
+.pais{
+    width: 85%;
+    height: 42px;
+    font-size: 20px;
+}
+
+.bottom-pais{
+    width: 14.5%;
+    height: 42px;
+    float: right;
+    margin-right: 5px;
+    border-style: none;
+    font-size: 19px;
+}
+.bottom-pais{
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.32'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.bottom-pais:hover{
+    opacity: .7;
+    cursor: pointer;
+}
+
+
+
+.titulo2{
+    width: auto;
+    font-size: 41px;
+    float: left;
+    margin: -80px 30%;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 630px;
+    padding-bottom: 10px;
+}
+
+.container1{
+    margin: 10% 20%;
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.container1 .card {
+    position: relative;
+    max-width: 300px;
+    height: 215px; 
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.container1 .card:hover{
+    height: 420px;
+}
+
+.container1 .card .imgBx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 5px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.container .card .imgBx img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.container1 .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3 ease-in-out;
+}
+
+.container1 .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+.imagen{
+    width: 260px;
+    height: 260px;
+}
+
+.click{
+    color: rgb(138, 72, 28);
+}
+
+.container1{
+    font-family: 'Heebo', sans-serif;
+    font-size: 17px;
+    
+}
+
